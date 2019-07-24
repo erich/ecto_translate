@@ -204,7 +204,7 @@ defmodule EctoTranslate do
     timestamps()
   end
 
-  @repo Application.get_env(:ecto_translate, :repo)
+  @repo CzEventsPlatform.Repo
   @required_fields ~w(translatable_id translatable_type locale field content)a
 
   @doc """
